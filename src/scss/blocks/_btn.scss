@@ -1,0 +1,31 @@
+.btn{
+    cursor: pointer;
+    width: 12rem;
+    height: 2.06rem;
+
+    background-color: $input_text;
+    border: 1px solid $input_text;
+    border-radius: 2rem;
+
+    font-size: 1rem;
+    font-weight: 700;
+    color: $white;
+
+    transition: background-color 0.2s linear, border 0.2s linear;
+    outline: none;
+
+    &:hover{
+        background-color: $hover_btn;
+        border: 1px solid $hover_btn;
+    }
+
+    &.btn__left{
+        background-color: $white;
+        color: $input_text;
+
+        &:hover{
+            background-color: $input_bg;
+            border: 1px solid $hover_btn;
+        }
+    }
+}
